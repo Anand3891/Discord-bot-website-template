@@ -30,7 +30,7 @@
         </ul>
         </div>
         <a id = "lolg" class="btn login-btn btn-outline-accent my-2 my-sm-0" style="font-size: 10px !important;font-family: poppins !important;" href = "https://discord.com/api/oauth2/authorize?client_id=769240725967470593&redirect_uri=https%3A%2F%2Ffryingpanbot.netlify.app&response_type=token&scope=identify">LOGIN</a>
-        <a id = "lol"  style="font-size: 10px !important;font-family: poppins !important;" href = "https://discord.com/api/oauth2/authorize?client_id=769240725967470593&redirect_uri=https%3A%2F%2Ffryingpanbot.netlify.app&response_type=token&scope=identify"></a>
+        <a id = "lol"  style="display: none; font-size: 10px !important;font-family: poppins !important;" href = "https://discord.com/api/oauth2/authorize?client_id=769240725967470593&redirect_uri=https%3A%2F%2Ffryingpanbot.netlify.app&response_type=token&scope=identify"></a>
     </div>
     </ul>
     <script>
@@ -50,7 +50,6 @@
 					.then(response => {
 						const { username, discriminator } = response;
                         document.getElementById('lol').innerText += ` ${username}#${discriminator}`;
-                        document.getElementById('lolg').style.display = 'block';
 					})
 					.catch(console.error);
 
