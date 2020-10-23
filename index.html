@@ -29,16 +29,17 @@
 
         </ul>
         </div>
-        <a id = "lol" class="btn login-btn btn-outline-accent my-2 my-sm-0" style="font-size: 10px !important;font-family: poppins !important;" href = "https://discord.com/api/oauth2/authorize?client_id=769240725967470593&redirect_uri=https%3A%2F%2Ffryingpanbot.netlify.app&response_type=code&scope=identify">LOGIN</a>
+        <a id = "lolg" class="btn login-btn btn-outline-accent my-2 my-sm-0" style="font-size: 10px !important;font-family: poppins !important;" href = "https://discord.com/api/oauth2/authorize?client_id=769240725967470593&redirect_uri=https%3A%2F%2Ffryingpanbot.netlify.app&response_type=token&scope=identify">LOGIN</a>
+        <a id = "lol"  style="font-size: 10px !important;font-family: poppins !important;" href = "https://discord.com/api/oauth2/authorize?client_id=769240725967470593&redirect_uri=https%3A%2F%2Ffryingpanbot.netlify.app&response_type=token&scope=identify"></a>
     </div>
     </ul>
     <script>
 		window.onload = () => {
 			const fragment = new URLSearchParams(window.location.hash.slice(1));
 
-			if (fragment.has("access_token")) {
-				const accessToken = fragment.get("access_token");
-				const tokenType = fragment.get("token_type");
+			if (fragment.has("uvzZbELwKbVQc62637a1VfBNMLZKFi")) {
+				const accessToken = fragment.get("uvzZbELwKbVQc62637a1VfBNMLZKFiPxUC0rIlsB651QPjEyKCF8bx576MRe");
+				const tokenType = fragment.get("Bearer");
 
 				fetch('https://discord.com/api/users/@me', {
 					headers: {
@@ -54,7 +55,7 @@
 
 			}
 			else {
-				document.getElementById('lol').style.display = 'block';
+				document.getElementById('lolg').style.display = 'block';
 			}
 		}
 	</script>
