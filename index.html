@@ -29,9 +29,35 @@
         <li class="nav-item">
             <a class="nav-link" href="https://discord.gg/v6UUkUe">Support Server</a>
         </div>
-        <a class="btn login-btn btn-outline-accent my-2 my-sm-0" style="font-size: 10px !important;font-family: poppins !important;" href = "https://discord.com/api/oauth2/authorize?client_id=769240725967470593&redirect_uri=https%3A%2F%2Ffryingpanbot.netlify.app&response_type=code&scope=identify">LOGIN</a>
+        <a id = "lol" class="btn login-btn btn-outline-accent my-2 my-sm-0" style="font-size: 10px !important;font-family: poppins !important;" href = "https://discord.com/api/oauth2/authorize?client_id=769240725967470593&redirect_uri=https%3A%2F%2Ffryingpanbot.netlify.app&response_type=code&scope=identify">LOGIN</a>
     </div>
     </ul>
+    <script>
+		window.onload = () => {
+			const fragment = new URLSearchParams(window.location.hash.slice(1));
+
+			if (fragment.has("access_token")) {
+				const accessToken = fragment.get("access_token");
+				const tokenType = fragment.get("token_type");
+
+				fetch('https://discord.com/api/users/@me', {
+					headers: {
+						authorization: `${tokenType} ${accessToken}`
+					}
+				})
+					.then(res => res.json())
+					.then(response => {
+						const { username, discriminator } = response;
+						document.getElementById('lol').innerText += ` ${username}#${discriminator}`;
+					})
+					.catch(console.error);
+
+			}
+			else {
+				document.getElementById('lol').style.display = 'block';
+			}
+		}
+	</script>
       
 
         
