@@ -1,0 +1,31 @@
+{
+  "name": "fryingpanbot",
+  "version": "1.0.0",
+  "description": "none",
+  "main": "bot.js",
+  "directories": {
+    "lib": "lib",
+    "man": "man"
+  },
+  "scripts": {
+    "test": "node index.js",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Anand3891/fryingpanbot.git"
+  },
+  "keywords": [
+    "node"
+  ],
+  "author": "Frying Pan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Anand3891/fryingpanbot/issues"
+  },
+  "homepage": "https://github.com/Anand3891/fryingpanbot#readme",
+  "dependencies": {
+    "fs": "0.0.1-security",
+    "http": "0.0.1-security"
+  }
+}
