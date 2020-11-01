@@ -20,6 +20,15 @@ body {
      color: #AD91FF !important;
      font-weight: bold !important;
  }
+ .widgets {
+    position: fixed;
+    top: 0;
+    right: 0;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-left: 20px;
+    z-index: 1000;
+}
 
  .login-btn {
      border: 2px solid #AD91FF !important;
