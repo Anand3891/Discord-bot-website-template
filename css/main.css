@@ -14,12 +14,12 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #7289DA;
+    background-color: #108ad5;
 }
 
 li {
     float: right;
-    border-right:1px solid #7289DA;
+    border-right:1px solid #108ad5;
 }
 
 li:last-child {
@@ -35,7 +35,7 @@ li a {
 }
 
 li a:hover:not(.active) {
-    background-color: #7289DA;
+    background-color: #108ad5;
 }
 
 .active {
