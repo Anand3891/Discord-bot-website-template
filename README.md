@@ -1,33 +1,12 @@
-# Discord bots website template
+## Discord bot web
 
-Amazing website with good UI design for new Discord bots, designed with Bootstrap & now-ui-kit available in English and Arabic.
+Modern website design UI / UX without any frameworks HTML, CSS, JS 
+Supports all language
 
-![Screenshot](https://raw.githubusercontent.com/NourEldienHE/Discord-bot-website-template/master/Screenshot.png)
+![](Screenshot.png)
 
-## Getting Started
+# Meta
+Abdennour Mez – [abdennour.mez160@gmail.com](mailto:abdennour.mez160@gmail.com)
 
-Download or fork the repo to get started!
-
-### Installing
-
-Download or fork the repo
-
-```
-git clone https://github.com/NourEldienHE/Discord-bot-website-template.git
-```
-
-Open index.html and start to use the website 
-
-## Built With
-
-* [Bootstrap](https://getbootstrap.com/) - The web framework used
-* [Now-ui-kit](https://demos.creative-tim.com/now-ui-kit/index.html) - Dependency Management
-
-## Authors
-
-[Nouridio](https://github.com/Nouridio)
-
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+See ``LICENSE`` for more information.
+[NouNouDz](https://github.com/NouNouDz) 
